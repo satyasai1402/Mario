@@ -124,7 +124,7 @@ function spawnObstacles(){
   if (frameCount % 75 === 0) {
     obstacle = createSprite(600,290,10,10);
     obstacle.addAnimation("obsta",obstacleAni);
-    obstacle.velocityX=-(4+score/20);
+    obstacle.velocityX=-(4+score/50);
     console.log(obstacle.velocityX)
     obstacle.lifeTime=150;
     obstacle.setCollider("rectangle",0,0,30,50)
